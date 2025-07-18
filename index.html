@@ -38,13 +38,32 @@
                 </p>
             </div>
             <div class="bubble">
-                <h2>Overclocking :</h2>
-                <p>
-                    Découvrez comment optimiser les performances de votre PC grâce à l’overclocking.<br>
-                    <hr class="mini-hr">
-                    L’overclocking permet d’augmenter la fréquence de fonctionnement de certains composants (CPU, GPU, RAM) pour obtenir de meilleures performances, tout en respectant certaines précautions pour la stabilité et la durée de vie du matériel.
-                </p>
-                <a href="overclocking.html" class="oc-btn">overclock page</a>
+                <h2>Ma config perso :</h2>
+                <ul>
+                    <li>CPU : 9800X3D
+                        <ul>
+                            <li>Overclocking : 5.4GHz</li>
+                            <li>1.25 soc</li>
+                            <li>PBO -25 +200 </li>
+                        </ul>
+                    </li>
+                    <li>Carte mère : MSI Gaming Plus X870</li>
+                    <li>RAM : Corsair Vengeance 6000cl30 - 2200fclk</li>
+                    <li>GPU : RTX 4070ti Yeston</li>
+                    <li>SSD : Samsung 990 Pro 2TB</li>
+                    <li>Alim : NZXT C1200</li>
+                    <li>Boîtier : NZXT H6 Flow</li>
+                    <li>Refroidissement : Enermax Liqmaxflo SR 360mm</li>
+                </ul>
+                <button id="zentimings-btn" class="oc-btn" style="margin-top:1.2em;">Afficher mon screen Zentimings</button>
+                <div id="zentimings-overlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;backdrop-filter:blur(5px);">
+                    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);max-width:90vw;max-height:90vh;text-align:center;">
+                        <img src="ressource/zt.png" alt="Screen Zentimings" style="max-width:100%;max-height:80vh;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.6);object-fit:contain;">
+                        <div style="margin-top:15px;">
+                            <button id="close-zentimings" style="background:#ff4757;color:white;border:none;padding:8px 20px;border-radius:8px;cursor:pointer;font-weight:600;font-size:14px;">Fermer</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="bubble">
                 <h2>Pourquoi assembler son PC ? :</h2>
@@ -89,5 +108,42 @@
             </div>
         </div>
     </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var btn = document.getElementById('zentimings-btn');
+        var overlay = document.getElementById('zentimings-overlay');
+        var closeBtn = document.getElementById('close-zentimings');
+        
+        if(btn && overlay && closeBtn) {
+            // Ouvrir l'overlay
+            btn.addEventListener('click', function() {
+                overlay.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Empêche le scroll
+            });
+            
+            // Fermer l'overlay avec le bouton
+            closeBtn.addEventListener('click', function() {
+                overlay.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Remet le scroll
+            });
+            
+            // Fermer l'overlay en cliquant sur le fond noir
+            overlay.addEventListener('click', function(e) {
+                if(e.target === overlay) {
+                    overlay.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Fermer avec Escape
+            document.addEventListener('keydown', function(e) {
+                if(e.key === 'Escape' && overlay.style.display === 'block') {
+                    overlay.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+    });
+    </script>
 </body>
 </html>
