@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>CPU</title>
+    <title>Overclocking</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="minimal">
@@ -13,10 +13,120 @@
             </a>
         </div>
         <h1>Overclocking</h1>
-        <h2></h2>
+        <h2 class="titre-bar">Guide complet pour optimiser vos performances,</h2>
+        <h2 class="titre-bar">je ne suis pas responsable des dommages causés par l'overclocking que vous faites, chaque cpu et chaque gpu sont differents</h2>
     </header>
-</body>
-</html>
+    <main>
+        <div class="bubble">
+            <h2>🚀 Qu'est-ce que l'Overclocking ?</h2>
+            <p>L'overclocking consiste à faire fonctionner vos composants (CPU, GPU, RAM) à des fréquences supérieures à leurs spécifications d'origine pour obtenir de meilleures performances.</p>
+            <hr class="mini-hr">
+            <p><strong>Avantages :</strong> Gains de performances gratuits, meilleure expérience gaming</p>
+            <p><strong>Risques :</strong> Augmentation de la température, consommation électrique, usure prématurée si mal fait</p>
+        </div>
+
+        <div class="bubble">
+            <h2>🔧 Overclocking CPU</h2>
+            <h3>AMD </h3>
+            <ul>
+                <li><strong>PBO :</strong> Activez Precision Boost Overdrive</li>
+                <li><strong>Curve Optimizer :</strong> -10 à -30 sur tous les cœurs tout dépend de votre IMC</li>
+                <li><strong>Max Boost :</strong> +200 MHz</li>
+                <li><strong>3D V-Cache :</strong> Pas d'overclocking manuel sur les 7000, seulement CO</li>
+            </ul>
+        </div>
+
+        <div class="bubble">
+            <h2>🧠 Overclocking RAM (DDR5)</h2>
+            <ul>
+                <li><strong>Profil XMP/EXPO :</strong> Activez d'abord le profil constructeur puis ajustez manuellement les timings et voltages.</li>
+                <li><strong>FCLK (AMD) :</strong> 1:1 avec la RAM (6000 MHz = 3000 FCLK)</li>
+                <li><strong>Voltages :</strong>
+                    <ul>
+                        <li>VDIMM : 1.35-1.4V pour DDR5-6000</li>
+                        <li>VDDQ : 1.3V</li>
+                        <li>VPP : 1.8V</li>
+                    </ul>
+                </li>
+                <li><strong>Timings principaux :</strong> CL-RCD-RP-RAS (ex: 30-36-36-76)</li>
+                <li><strong>Température :</strong> Gardez sous 50°C</li>
+            </ul>
+        </div>
+
+        <div class="bubble">
+            <h2>🎮 Overclocking GPU</h2>
+            <ul>
+                <li><strong>MSI Afterburner :</strong> Logiciel recommandé</li>
+                <li><strong>Power Limit :</strong> Montez à 120% d'abord si possible personnellement jsuis lock a 100%</li>
+                <li><strong>Core Clock :</strong> +50 MHz par étapes</li>
+                <li><strong>Memory Clock :</strong> +200-500 MHz selon la carte</li>
+                <li><strong>Fan Curve :</strong> Courbe agressive pour refroidissement</li>
+                <li><strong>Undervolt :</strong> Réduisez voltage pour moins de chaleur</li>
+            </ul>
+        </div>
+
+        <div class="bubble">
+            <h2>🛠️ Outils Indispensables</h2>
+            <h3>Tests de Stabilité :</h3>
+            <ul>
+                <li><strong>CPU :</strong> Prime95, OCCT, Cinebench R23</li>
+                <li><strong>RAM :</strong> MemTest86, TM5, OCCT Memory</li>
+                <li><strong>GPU :</strong> FurMark, Unigine Heaven, 3DMark</li>
+            </ul>
+            
+            <h3>Monitoring :</h3>
+            <ul>
+                <li><strong>HWiNFO64 :</strong> Surveillance complète des capteurs</li>
+                <li><strong>MSI Afterburner :</strong> OSD en jeu</li>
+                <li><strong>ZenTimings :</strong> Infos RAM détaillées (AMD)</li>
+                <li><strong>CPU-Z / GPU-Z :</strong> Informations composants</li>
+            </ul>
+        </div>
+
+        <div class="bubble">
+            <h2>💡 Conseils Pro</h2>
+            <ul>
+                <li><strong>Patience :</strong> L'overclocking prend du temps</li>
+                <li><strong>Sauvegardez :</strong> Profils BIOS stables</li>
+                <li><strong>Undervolting :</strong> Souvent plus efficace que l'overclocking</li>
+                <li><strong>Stabilité > Performance :</strong> Un PC qui crash n'est pas utile</li>
+                <li><strong>Surveiller l'usure :</strong> Degradation over time des composants</li>
+                <li><strong>Garantie :</strong> L'OC peut annuler la garantie</li>
+            </ul>
+        </div>
+
+        <div class="bubble">
+            <h2>🏆 Ma Config OC - 33ème au Classement 3DMark</h2>
+            <p>Configuration personnelle qui m'a permis d'atteindre le <strong>33ème rang mondial</strong> sur 3DMark :</p>
+            
+            <h3>🔥 CPU - AMD Ryzen 7 9800X3D :</h3>
+            <ul>
+                <li><strong>Boost Clock :</strong> +200 MHz</li>
+                <li><strong>Curve Optimizer :</strong> -15 sur tous les cores</li>
+                <li><strong>FCLK :</strong> 2200 MHz (1:1 avec la RAM)</li>
+            </ul>
+
+            <h3>🎮 GPU - RTX 4070ti Yeston :</h3>
+            <ul>
+                <li><strong>Core Clock :</strong> +145 MHz</li>
+                <li><strong>Memory Clock :</strong> +2000 MHz</li>
+            </ul>
+
+            <h3>🧠 RAM - Corsair Vengeance 6000 CL30 :</h3>
+            <ul>
+                <li><strong>Fréquence :</strong> 6000 MHz</li>
+                <li><strong>FCLK :</strong> 2200 MHz (ratio 1:1)</li>
+                <li><strong>Timings :</strong> Optimisés au maximum</li>
+                <li><strong>Stabilité :</strong> Testée 24h+</li>
+            </ul>
+
+            <div style="margin-top:2em;text-align:center;">
+                <div style="text-align: center;">
+    <img src="ressource/3dmark.png" alt="Score 3DMark - 33ème rang mondial" style="max-width:100%; border-radius:12px; box-shadow:0 8px 32px rgba(0,0,0,0.6); display:block; margin: 0 auto;">
+</div>
+            </div>
+        </div>
+    </main>
 
 <footer class="site-footer">
         <div class="footer-content">
