@@ -1,3 +1,13 @@
+@media (max-width: 1200px) {
+    .bubble, .bubble-page {
+        min-height: 220px;
+        height: auto;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        transform: none !important;
+        /* Empêche tout scale/translate qui pourrait changer la hauteur */
+    }
+}
 /* Fixe la taille du <p> dans la bulle Présentation sur tous les écrans, priorité maximale */
 .bubble-grid > .bubble:first-child > p {
     font-size: 1.13rem !important;
