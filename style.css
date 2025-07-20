@@ -1,11 +1,13 @@
-@media (max-width: 1200px) {
-    /* Fixe la taille du <p> dans la bulle Présentation sur mobile/tablette */
-    .bubble-grid .bubble:first-child p {
-        font-size: 1.13rem !important;
-        line-height: 1.7 !important;
-        margin-bottom: 0 !important;
-    }
+/* Fixe la taille du <p> dans la bulle Présentation sur tous les écrans, priorité maximale */
+.bubble-grid > .bubble:first-child > p {
+    font-size: 1.13rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    color: #e0e0e0 !important;
+    text-align: left !important;
 }
+
 /* Classe pour les titres secondaires plus petits et en italique */
 .titre-bar {
     font-size: 1.1rem;
