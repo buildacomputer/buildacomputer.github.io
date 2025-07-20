@@ -574,7 +574,6 @@ a.back-home:hover .arrow, a.back-home:focus .arrow {
 }
 
 @media (max-width: 700px) {
-    /* Header beaucoup plus grand pour mobile */
     header {
         padding: 4rem 1rem 5rem 1rem !important;
         min-height: 180px !important;
@@ -612,19 +611,6 @@ a.back-home:hover .arrow, a.back-home:focus .arrow {
         box-sizing: border-box !important;
     }
      
-    nav.component-nav ul li {
-        width: 100% !important;
-    }
-    
-    nav.component-nav ul li a {
-        display: block !important;
-        padding: 1.2rem 1.5rem !important;
-        font-size: 1.1rem !important;
-        text-align: center !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-    }
-    
     /* CPU bubbles en colonne complète */
     .cpu-bubbles {
         display: flex !important;
