@@ -611,31 +611,7 @@ a.back-home:hover .arrow, a.back-home:focus .arrow {
         max-width: 100% !important;
         box-sizing: border-box !important;
     }
-    
-    /* FORCE l'affichage en colonne - plus agressif */
-    .bubble-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 2rem !important;
-        grid-template-columns: none !important;
-        grid-template-rows: none !important;
-    }
-    
-    /* Toutes les bulles en pleine largeur */
-    .bubble-grid .bubble {
-        margin-bottom: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-    
-    /* Navigation mobile en colonne */
-    nav.component-nav ul {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 1rem !important;
-        margin: 1.5rem 0 2rem 0 !important;
-    }
-    
+     
     nav.component-nav ul li {
         width: 100% !important;
     }
