@@ -41,8 +41,12 @@
             <div class="bubble">
                 <h2>Ma config perso :</h2>
                 <ul>
-                    <li><strong>CPU : </strong>9800X3D
-                        <ul>
+                    <li>
+                        <button id="cpu-toggle-btn" style="background:transparent;border:none;padding:0;margin:0;font:inherit;cursor:pointer;display:inline-flex;align-items:center;">
+                            <strong>CPU :</strong>&nbsp;9800X3D
+                            <span id="cpu-arrow" style="display:inline-block;margin-left:6px;transition:transform 0.2s;">&#9654;</span>
+                        </button>
+                        <ul id="cpu-options-list" style="display:none; margin-top:0.7em;">
                             <li><strong>Overclocking : </strong>5.4GHz</li>
                             <li><strong>Soc : </strong>1.25</li>
                             <li><strong>PBO : </strong>curveoptimizer & +200</li>
@@ -113,23 +117,40 @@
     </footer>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
+        // CPU options déroulant avec animation slide
+        var cpuToggleBtn = document.getElementById('cpu-toggle-btn');
+        var cpuList = document.getElementById('cpu-options-list');
+        var cpuArrow = document.getElementById('cpu-arrow');
+        if(cpuToggleBtn && cpuList && cpuArrow) {
+            cpuToggleBtn.addEventListener('click', function() {
+                var isOpen = cpuList.classList.contains('open');
+                if(isOpen) {
+                    cpuList.classList.remove('open');
+                    setTimeout(function(){ cpuList.style.display = 'none'; }, 350);
+                    cpuArrow.style.transform = 'rotate(0deg)';
+                } else {
+                    cpuList.style.display = 'block';
+                    setTimeout(function(){ cpuList.classList.add('open'); }, 10);
+                    cpuArrow.style.transform = 'rotate(90deg)';
+                }
+            });
+        }
+
+        // Overlay Zentimings
         var btn = document.getElementById('zentimings-btn');
         var overlay = document.getElementById('zentimings-overlay');
         var closeBtn = document.getElementById('close-zentimings');
-        
         if(btn && overlay && closeBtn) {
             // Ouvrir l'overlay
             btn.addEventListener('click', function() {
                 overlay.style.display = 'block';
                 document.body.style.overflow = 'hidden'; // Empêche le scroll
             });
-            
             // Fermer l'overlay avec le bouton
             closeBtn.addEventListener('click', function() {
                 overlay.style.display = 'none';
                 document.body.style.overflow = 'auto'; // Remet le scroll
             });
-            
             // Fermer l'overlay en cliquant sur le fond noir
             overlay.addEventListener('click', function(e) {
                 if(e.target === overlay) {
@@ -137,7 +158,6 @@
                     document.body.style.overflow = 'auto';
                 }
             });
-            
             // Fermer avec Escape
             document.addEventListener('keydown', function(e) {
                 if(e.key === 'Escape' && overlay.style.display === 'block') {

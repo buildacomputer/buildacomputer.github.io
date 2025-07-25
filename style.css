@@ -1234,5 +1234,18 @@ a.back-home:hover .arrow, a.back-home:focus .arrow {
     font-weight: bold;
 }
 
+#cpu-options-list {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s cubic-bezier(.4,0,.2,1);
+    margin-top:0.7em;
+    padding-left: 0;
+}
+#cpu-options-list.open {
+    max-height: 300px;
+}
+
+
+
 /*# sourceMappingURL=style.css.map */
 
