@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 /* Classe pour les titres secondaires plus petits et en italique */
 .titre-bar {
     font-size: 1.1rem;
@@ -21,7 +23,7 @@ html, body {
 }
 
 body {
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #0a0a0c;
     color: #e8e9ed;
     margin: 0;
