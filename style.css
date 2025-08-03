@@ -110,7 +110,8 @@ body::after {
 } 
 
 header {
-    background: #18181b;
+    background: rgba(24, 24, 27, 0.2);
+    backdrop-filter: blur(8px);
     color: #fff;
     padding: 2.5rem 2rem 4rem 2rem;
     text-align: center;
@@ -1105,7 +1106,8 @@ a.back-home:hover .arrow, a.back-home:focus .arrow {
 }
 
 .site-footer {
-    background: #18181b;
+    background: rgba(24, 24, 27, 0.2);
+    backdrop-filter: blur(8px);
     color: #d1d5db;
     padding: 3rem 2rem 2rem 2rem;
     border-top: 1px solid #2a2a2f;
