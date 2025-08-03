@@ -109,6 +109,7 @@ body::after {
     }
 } 
 
+
 header {
     background: rgba(24, 24, 27, 0.2);
     backdrop-filter: blur(8px);
