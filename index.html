@@ -65,12 +65,12 @@
                     <li><strong>Refroidissement : </strong>Enermax LiqMaxFlo SR 360mm</li>
                 </ul>
                 <button id="zentimings-btn" class="oc-btn" style="margin-top:1.2em;">Afficher mon screen Zentimings</button>
-                <div id="zentimings-overlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;backdrop-filter:blur(5px);">
-                    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);max-width:90vw;max-height:90vh;text-align:center;">
-                        <img src="ressource/zt.png" alt="Screen Zentimings" style="max-width:100%;max-height:80vh;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.6);object-fit:contain;">
-                        <div style="margin-top:15px;">
-                            <button id="close-zentimings" style="background:#ff4757;color:white;border:none;padding:8px 20px;border-radius:8px;cursor:pointer;font-weight:600;font-size:14px;">Fermer</button>
-                        </div>
+                
+                <!-- Overlay local dans la bulle -->
+                <div id="zentimings-overlay" style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:10; border-radius:12px; padding:20px; box-sizing:border-box;">
+                    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%;">
+                        <img src="ressource/zt.png" alt="Screen Zentimings" style="max-width:90%; max-height:90%; border-radius:8px; box-shadow:0 4px 16px rgba(0,0,0,0.6); object-fit:contain;">
+                        <button id="close-zentimings" style="margin-top:15px; background:#ff4757; color:white; border:none; padding:8px 20px; border-radius:8px; cursor:pointer; font-weight:600; font-size:14px;">Fermer</button>
                     </div>
                 </div>
             </div>
@@ -139,35 +139,27 @@
                 }
             });
         }
-
-        // Overlay Zentimings
-        var btn = document.getElementById('zentimings-btn');
-        var overlay = document.getElementById('zentimings-overlay');
+        
+        // Zentimings overlay dans la bulle
+        var zentimingsBtn = document.getElementById('zentimings-btn');
+        var zentimingsOverlay = document.getElementById('zentimings-overlay');
         var closeBtn = document.getElementById('close-zentimings');
-        if(btn && overlay && closeBtn) {
+        
+        // Il faut que la bulle soit en position relative pour l'overlay
+        var bubble = zentimingsBtn ? zentimingsBtn.closest('.bubble') : null;
+        if(bubble) {
+            bubble.style.position = 'relative';
+        }
+        
+        if(zentimingsBtn && zentimingsOverlay && closeBtn) {
             // Ouvrir l'overlay
-            btn.addEventListener('click', function() {
-                overlay.style.display = 'block';
-                document.body.style.overflow = 'hidden'; // Empêche le scroll
+            zentimingsBtn.addEventListener('click', function() {
+                zentimingsOverlay.style.display = 'block';
             });
-            // Fermer l'overlay avec le bouton
+            
+            // Fermer l'overlay
             closeBtn.addEventListener('click', function() {
-                overlay.style.display = 'none';
-                document.body.style.overflow = 'auto'; // Remet le scroll
-            });
-            // Fermer l'overlay en cliquant sur le fond noir
-            overlay.addEventListener('click', function(e) {
-                if(e.target === overlay) {
-                    overlay.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-            });
-            // Fermer avec Escape
-            document.addEventListener('keydown', function(e) {
-                if(e.key === 'Escape' && overlay.style.display === 'block') {
-                    overlay.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
+                zentimingsOverlay.style.display = 'none';
             });
         }
     });
