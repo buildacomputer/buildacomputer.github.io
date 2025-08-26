@@ -66,7 +66,6 @@
                 </ul>
                 <button id="zentimings-btn" class="oc-btn" style="margin-top:1.2em;">Afficher mon screen Zentimings</button>
                 
-                <!-- Overlay local dans la bulle -->
                 <div id="zentimings-overlay" style="display:none; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:10; border-radius:12px; padding:20px; box-sizing:border-box;">
                     <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%;">
                         <img src="ressource/zt.png" alt="Screen Zentimings" style="max-width:90%; max-height:90%; border-radius:8px; box-shadow:0 4px 16px rgba(0,0,0,0.6); object-fit:contain;">
@@ -108,10 +107,11 @@
                 <a href="boitier.html">Boîtier</a>
                 <a href="refroidissement.html">Refroidissement</a>
                 <a href="budget.html">Budget</a>
+                <a href="optimisation.html">Optimisation</a>
             </div>
             <div class="footer-social">
                 <span>Discord : </span>
-                <a href="https://discord.com/users/tiago4294" target="_blank" class="discord-link">tiago4294</a>
+                <a href="https://discord.com/users/tiago4294" target="_blank" class="discord-link">luvrym</a>
             </div>
             <div class="footer-copy">
                 &copy; 2025 Folerym PC Parts. Tous droits réservés.
@@ -120,7 +120,6 @@
     </footer>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // CPU options déroulant avec animation slide
         var cpuToggleBtn = document.getElementById('cpu-toggle-btn');
         var cpuList = document.getElementById('cpu-options-list');
         var cpuArrow = document.getElementById('cpu-arrow');
@@ -139,24 +138,20 @@
             });
         }
         
-        // Zentimings overlay dans la bulle
         var zentimingsBtn = document.getElementById('zentimings-btn');
         var zentimingsOverlay = document.getElementById('zentimings-overlay');
         var closeBtn = document.getElementById('close-zentimings');
         
-        // Il faut que la bulle soit en position relative pour l'overlay
         var bubble = zentimingsBtn ? zentimingsBtn.closest('.bubble') : null;
         if(bubble) {
             bubble.style.position = 'relative';
         }
         
         if(zentimingsBtn && zentimingsOverlay && closeBtn) {
-            // Ouvrir l'overlay
             zentimingsBtn.addEventListener('click', function() {
                 zentimingsOverlay.style.display = 'block';
             });
             
-            // Fermer l'overlay
             closeBtn.addEventListener('click', function() {
                 zentimingsOverlay.style.display = 'none';
             });
