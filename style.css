@@ -1240,6 +1240,18 @@ a.back-home:hover .arrow, a.back-home:focus .arrow {
     max-height: 300px;
 }
 
+html body.minimal header nav.component-nav {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease; /* transition douce sur l'opacité */
+}
 
+/* Quand la fenêtre est plus petite que 719px de large */
+@media (max-width: 719px) {
+    html body.minimal header nav.component-nav {
+        opacity: 0;        /* devient invisible */
+        pointer-events: none; /* désactive les clics */
+    }
+}
 
 
