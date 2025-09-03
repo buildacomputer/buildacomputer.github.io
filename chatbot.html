@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Folerym PC Part's - Chatbot [BETA]</title>
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="Folerym PC Parts - Chatbot [BETA]" />
+    <meta property="og:description" content="Chatbot informatique (version BETA) - posez vos questions sur l’optimisation Windows, les composants et le hardware." />
+    <meta property="og:image" content="https://buildacomputer.github.io/ressource/pclogo.png" />
+    <link rel="icon" href="https://buildacomputer.github.io/ressource/favicon.ico" type="image/x-icon">
+    <meta property="og:url" content="https://buildacomputer.github.io/chatbot.html" />
+</head>
+<body>
+    <header>
+        <div class="back-home-wrapper">
+            <a href="index.html" class="back-home">
+                <span class="arrow">&#8592;</span> Accueil
+            </a>
+        </div>
+        <h1>Chatbot <span class="beta-tag">[BETA]</span></h1>
+        <h2 class="titre-bar">Posez vos questions sur l’informatique et l’optimisation</h2>
+    </header>
+
+    <main>
+        <div class="bubble bubble-page" style="max-width:900px;margin:2.5rem auto;display:block;">
+            <p>
+                Bienvenue dans le <strong>Chatbot [BETA]</strong> !  
+                Cette version est encore expérimentale et se base sur une petite FAQ.  
+                Posez une question et voyez si le bot connaît la réponse 👇
+            </p>
+            <hr class="mini-hr">
+
+            <div id="chatbot-container">
+                <div id="chatbox"></div>
+                <div id="chat-input">
+                    <input id="user-input" type="text" placeholder="Écris ta question...">
+                    <button id="send-btn">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="cpu.html">CPU</a>
+                <a href="carte-mere.html">Carte mère</a>
+                <a href="ram.html">RAM</a>
+                <a href="gpu.html">GPU</a>
+                <a href="stockage.html">SSD</a>
+                <a href="alimentation.html">PSU</a>
+                <a href="boitier.html">Boîtier</a>
+                <a href="refroidissement.html">Refroidissement</a>
+                <a href="budget.html">Budget</a>
+                <a href="optimisation.html">Optimisation</a>
+                <a href="chatbot.html">Chatbot <span class="beta-tag">[BETA]</span></a>
+            </div>
+            <div class="footer-social">
+                <span>Discord : </span>
+                <a href="https://discord.com/users/tiago4294" target="_blank" class="discord-link">luvrym</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2025 Folerym PC Parts. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const input = document.getElementById("user-input");
+        const sendBtn = document.getElementById("send-btn");
+        const chatbox = document.getElementById("chatbox");
+
+        async function sendMessage() {
+            const text = input.value.trim();
+            if (!text) return;
+
+            // Message utilisateur
+            const userMsg = document.createElement("div");
+            userMsg.className = "msg user";
+            userMsg.innerHTML = `<b>Toi:</b> ${text}`;
+            chatbox.appendChild(userMsg);
+
+            // Message bot
+            let response = "🤖 Je suis encore en version [BETA], mais je vais bientôt répondre intelligemment !";
+
+            // Essayer de récupérer la réponse depuis la FAQ
+            try {
+                const res = await fetch("faq.json");
+                const faq = await res.json();
+                const found = faq.find(item => text.toLowerCase().includes(item.question.toLowerCase()));
+                if (found) response = found.reponse;
+            } catch (e) {
+                response = "Erreur lors du chargement de la FAQ.";
+            }
+
+            const botMsg = document.createElement("div");
+            botMsg.className = "msg bot";
+            botMsg.innerHTML = `<b>Bot:</b> ${response}`;
+            chatbox.appendChild(botMsg);
+
+            chatbox.scrollTop = chatbox.scrollHeight;
+            input.value = "";
+        }
+
+        // Clic bouton
+        sendBtn.addEventListener("click", sendMessage);
+
+        // Touche Entrée
+        input.addEventListener("keydown", function (e) {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    });
+    </script>
+</body>
+</html>

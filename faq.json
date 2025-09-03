@@ -1,0 +1,269 @@
+[
+  {
+    "question": "optimisation windows",
+    "reponse": "Pour optimiser Windows : désactive les programmes inutiles au démarrage, nettoie régulièrement les fichiers temporaires, active le mode performance, mets à jour Windows et les pilotes, et ajuste les effets visuels pour privilégier les performances."
+  },
+  {
+    "question": "nettoyage pc",
+    "reponse": "Pour maintenir les composants en bon état, ouvre le boîtier et enlève la poussière avec de l'air comprimé, surtout autour des ventilateurs, radiateurs et alimentation. Évite de toucher directement les composants sensibles."
+  },
+  {
+    "question": "cpu",
+    "reponse": "Le CPU exécute les instructions du système et des applications. Plus il a de cœurs et de threads, plus il gère de tâches simultanément. La fréquence (GHz) influence la vitesse d'exécution. L’overclocking augmente les performances mais aussi la consommation et la chaleur."
+  },
+  {
+    "question": "gpu",
+    "reponse": "Le GPU gère l’affichage et les calculs graphiques. Pour les jeux modernes, privilégie des cartes avec VRAM suffisante et support du ray tracing si nécessaire."
+  },
+  {
+    "question": "ram",
+    "reponse": "La RAM stocke temporairement les données en cours d'utilisation. Plus de RAM permet de gérer plus de programmes simultanément. Pour le gaming et le multitâche, 16 à 32 Go est recommandé. La fréquence et les timings influencent légèrement les performances."
+  },
+  {
+    "question": "ssd",
+    "reponse": "Les SSD offrent des temps de lecture/écriture rapides. Les SSD NVMe sont plus rapides que les SATA classiques. Installe le système d’exploitation et les jeux principaux dessus pour réduire les temps de chargement."
+  },
+  {
+    "question": "hdd",
+    "reponse": "Les disques durs offrent beaucoup de stockage pour un coût moindre mais sont plus lents. Idéal pour les sauvegardes et fichiers volumineux."
+  },
+  {
+    "question": "alimentation",
+    "reponse": "L’alimentation doit être certifiée 80+ Bronze ou mieux, avec une puissance suffisante pour ton PC et une marge pour les futurs upgrades. Marque reconnue recommandée : Corsair, Seasonic, be quiet!, etc."
+  },
+  {
+    "question": "boitier",
+    "reponse": "Le boîtier protège et ventile les composants. Vérifie la compatibilité avec la carte mère (ATX, Micro-ATX, Mini-ITX), la longueur de la carte graphique et la hauteur du ventirad. Privilégie une bonne circulation d’air."
+  },
+  {
+    "question": "refroidissement",
+    "reponse": "Le refroidissement peut être par air ou liquide. Assure-toi que le boîtier supporte la taille du radiateur ou du ventirad. La pâte thermique entre CPU et ventirad doit être bien appliquée."
+  },
+  {
+    "question": "overclocking",
+    "reponse": "L’overclocking consiste à augmenter la fréquence CPU ou GPU pour plus de performances. Cela augmente consommation et chaleur. Un bon refroidissement est obligatoire."
+  },
+  {
+    "question": "pbo",
+    "reponse": "Precision Boost Overdrive (PBO) d’AMD augmente automatiquement la fréquence du CPU selon la température et l’alimentation, offrant un gain de performance sans overclock manuel."
+  },
+  {
+    "question": "timings ram",
+    "reponse": "Les timings de la RAM indiquent la latence. Plus ils sont bas, plus la mémoire est réactive. Pour la DDR5, équilibre fréquence et timings pour de meilleures performances."
+  },
+  {
+    "question": "windows 11 optimisation",
+    "reponse": "Active le mode performance, désactive les animations inutiles, utilise Storage Sense pour nettoyer automatiquement, et mets à jour régulièrement pilotes et système."
+  },
+  {
+    "question": "drivers",
+    "reponse": "Installe les derniers pilotes pour CPU, GPU et carte mère pour garantir stabilité et performances."
+  },
+  {
+    "question": "bios update",
+    "reponse": "Mettre à jour le BIOS améliore la compatibilité et la stabilité. Suis les instructions du fabricant pour éviter un flash incorrect."
+  },
+  {
+    "question": "dual channel",
+    "reponse": "Installe la RAM en dual channel pour augmenter la bande passante et améliorer les performances."
+  },
+  {
+    "question": "m2 vs sata",
+    "reponse": "Les SSD M.2 NVMe sont beaucoup plus rapides que les SSD SATA classiques. Installe Windows et les logiciels sur un M.2 NVMe pour des temps de chargement optimaux."
+  },
+  {
+    "question": "compatibilité composants",
+    "reponse": "Vérifie toujours la compatibilité entre CPU et carte mère (socket et chipset), RAM et carte mère (DDR4/DDR5), GPU et boîtier, PSU et consommation totale."
+  },
+  {
+    "question": "socket cpu",
+    "reponse": "Le socket CPU doit correspondre au socket de la carte mère. Exemple : LGA1700 pour Intel 12/13ème gen, AM5 pour AMD Ryzen 7000."
+  },
+  {
+    "question": "chipset",
+    "reponse": "Le chipset de la carte mère détermine quelles fonctionnalités sont disponibles et quels processeurs sont compatibles. Exemple : Z790 vs B760 pour Intel 13ème gen."
+  },
+  {
+    "question": "compatibilité gpu",
+    "reponse": "Vérifie la longueur du GPU par rapport au boîtier et la puissance nécessaire par rapport à l’alimentation. Assure-toi que les connecteurs PCIe correspondent."
+  },
+  {
+    "question": "frequence ram",
+    "reponse": "La fréquence RAM impacte légèrement les performances CPU/GPU. DDR4 3200 MHz est un minimum pour Ryzen et Intel modernes, DDR5 5600 MHz et plus est recommandé pour les builds haut de gamme."
+  },
+  {
+    "question": "timings memoire",
+    "reponse": "Les timings (ex : CL16) indiquent la latence. Des timings plus bas sont plus rapides mais la différence est souvent faible pour les usages classiques."
+  },
+  {
+    "question": "nvme heatsink",
+    "reponse": "Certains SSD NVMe chauffent beaucoup. Un dissipateur (heatsink) peut maintenir les performances en évitant le thermal throttling."
+  },
+  {
+    "question": "fps",
+    "reponse": "Le FPS mesure la fluidité des jeux. Pour le gaming compétitif, vise 120 FPS ou plus. Pour le confort général, 60 FPS suffit."
+  },
+  {
+    "question": "ray tracing",
+    "reponse": "Le ray tracing améliore le réalisme des lumières et ombres dans les jeux. Il consomme beaucoup de ressources GPU et réduit le FPS."
+  },
+  {
+    "question": "refresh rate",
+    "reponse": "La fréquence de rafraîchissement (Hz) du moniteur impacte la fluidité. 144 Hz ou plus est conseillé pour le gaming compétitif."
+  },
+  {
+    "question": "temps reponse ecran",
+    "reponse": "Le temps de réponse (ms) détermine la réactivité des pixels. Pour les jeux rapides, privilégie un écran < 5ms."
+  },
+  {
+    "question": "compatibilite carte mere",
+    "reponse": "Vérifie socket CPU, chipset, format (ATX, Micro-ATX, Mini-ITX), support RAM (DDR4/DDR5) et connecteurs GPU/PSU."
+  },
+  {
+    "question": "overheating cpu",
+    "reponse": "Si ton CPU surchauffe, vérifie la pâte thermique, le flux d’air, les ventilateurs et la fréquence. Ajuste si nécessaire ou améliore le refroidissement."
+  },
+  {
+    "question": "overheating gpu",
+    "reponse": "Si le GPU chauffe trop, nettoie les ventilateurs, améliore le flux d’air et vérifie les températures avec MSI Afterburner ou HWInfo."
+  },
+  {
+    "question": "screen tearing",
+    "reponse": "Le screen tearing se produit quand le FPS dépasse la fréquence de rafraîchissement. Active V-Sync ou G-Sync/FreeSync pour corriger."
+  },
+  {
+    "question": "psu wattage",
+    "reponse": "Choisis une PSU avec assez de watts pour ton système et une marge pour futur upgrade. Utilise un calculateur PSU si nécessaire."
+  },
+  {
+    "question": "modular psu",
+    "reponse": "Une alimentation modulaire permet de brancher uniquement les câbles nécessaires, réduisant l’encombrement et améliorant la circulation d’air."
+  },
+  {
+    "question": "cable management",
+    "reponse": "Organiser les câbles à l'intérieur du boîtier améliore le flux d'air et l’esthétique."
+  },
+  
+  {
+    "question": "wifi vs ethernet",
+    "reponse": "Pour le gaming ou le streaming stable, le câble Ethernet est toujours préférable au Wi-Fi. Le Wi-Fi est pratique mais peut subir des interférences et une latence plus élevée."
+  },
+  {
+    "question": "ping",
+    "reponse": "Le ping mesure le temps que met un paquet pour aller jusqu’au serveur et revenir. Un ping faible (<30ms) est idéal pour le gaming en ligne, un ping élevé (>100ms) peut provoquer du lag."
+  },
+  {
+    "question": "latence",
+    "reponse": "La latence est le délai de transmission des données. Pour réduire la latence, utilise Ethernet, un routeur performant et un serveur proche de ta localisation."
+  },
+  {
+    "question": "dual monitor",
+    "reponse": "L’utilisation de deux écrans augmente la productivité. Vérifie que ta carte graphique a assez de sorties et que les résolutions et taux de rafraîchissement sont compatibles."
+  },
+  {
+    "question": "triple monitor",
+    "reponse": "Pour trois écrans ou plus, vérifie que le GPU peut gérer les résolutions et fréquences combinées. Privilégie des écrans identiques pour une expérience homogène."
+  },
+  {
+    "question": "fps stable",
+    "reponse": "Pour avoir un FPS stable, ajuste les paramètres graphiques, active un mode performance, garde les pilotes à jour et surveille les températures CPU/GPU."
+  },
+  {
+    "question": "vram",
+    "reponse": "La VRAM est la mémoire dédiée du GPU. Plus elle est élevée, plus tu peux gérer de textures lourdes et de résolutions élevées dans les jeux. 6 à 8 Go minimum pour le gaming moderne, 12 Go+ pour le 4K."
+  },
+  {
+    "question": "ray tracing performance",
+    "reponse": "Le ray tracing consomme beaucoup de ressources GPU. Active-le uniquement si ton GPU est puissant et ajuste les autres paramètres graphiques pour maintenir un FPS correct."
+  },
+  {
+    "question": "g-sync freesync",
+    "reponse": "G-Sync (Nvidia) et FreeSync (AMD) synchronisent le FPS du jeu avec la fréquence de rafraîchissement de l’écran pour éviter le screen tearing et améliorer la fluidité."
+  },
+  {
+    "question": "temps reponse ecran",
+    "reponse": "Le temps de réponse influence la réactivité des pixels. Pour le gaming rapide, privilégie des écrans avec 1 à 5ms de temps de réponse."
+  },
+  {
+    "question": "monitor resolution",
+    "reponse": "La résolution d’un écran (1080p, 1440p, 4K) détermine la netteté de l’image. Plus la résolution est élevée, plus la charge GPU est importante."
+  },
+  {
+    "question": "fps monitor relation",
+    "reponse": "Le FPS optimal dépend de la fréquence de l’écran. Un écran 60Hz affiche maximum 60 FPS. Pour 144Hz ou 240Hz, il est recommandé d’avoir un FPS proche pour profiter de la fluidité."
+  },
+  {
+    "question": "usb ports",
+    "reponse": "Vérifie le nombre et le type de ports USB sur la carte mère et boîtier pour tes périphériques. USB 3.0 et USB-C offrent des vitesses de transfert plus rapides."
+  },
+  {
+    "question": "pci express lanes",
+    "reponse": "Les slots PCIe ont un nombre limité de lanes (x16, x8, x4). Une carte graphique ou NVMe peut être limitée si les lanes sont partagées entre plusieurs composants."
+  },
+  {
+    "question": "sli crossfire",
+    "reponse": "SLI (Nvidia) et CrossFire (AMD) permettent de connecter plusieurs GPU. Peu utilisé aujourd’hui, car la majorité des jeux ne supportent pas bien le multi-GPU."
+  },
+  {
+    "question": "m2 slots",
+    "reponse": "Vérifie le nombre de slots M.2 sur ta carte mère et la compatibilité NVMe/SATA. Certains slots partagent des lignes PCIe avec d’autres ports, ce qui peut réduire les vitesses."
+  },
+  {
+    "question": "bios settings",
+    "reponse": "Dans le BIOS, tu peux activer XMP/DOCP pour la RAM, régler le mode performance, gérer le ventilateur, et mettre à jour le microcode CPU."
+  },
+  {
+    "question": "xmp profile",
+    "reponse": "Le profil XMP (Intel) ou DOCP (AMD) permet de configurer automatiquement la RAM à sa fréquence et timings optimaux."
+  },
+  {
+    "question": "raid",
+    "reponse": "Le RAID combine plusieurs disques pour la vitesse (RAID 0) ou la sécurité (RAID 1). Sur un PC gaming moderne, les SSD NVMe sont souvent plus rapides et simples qu’un RAID logiciel."
+  },
+  {
+    "question": "fan curve",
+    "reponse": "Une courbe de ventilateur permet d’ajuster la vitesse des ventilateurs selon la température pour équilibrer silence et refroidissement."
+  },
+  {
+    "question": "thermal throttling",
+    "reponse": "Si CPU ou GPU dépasse une certaine température, il réduit automatiquement sa fréquence pour éviter d’endommager le composant."
+  },
+  {
+    "question": "case airflow",
+    "reponse": "Un bon flux d’air dans le boîtier maintient les composants au frais. Place des ventilateurs à l’avant pour l’air entrant et à l’arrière/haut pour l’air sortant."
+  },
+  {
+    "question": "cable management",
+    "reponse": "Organiser les câbles améliore le flux d’air et l’esthétique. Utilise des attaches et des gaines pour les regrouper proprement."
+  },
+  {
+    "question": "rgb lighting",
+    "reponse": "Le RGB est esthétique et peut être synchronisé via les logiciels de la carte mère ou du boîtier. Il n’a aucun impact sur les performances."
+  },
+  {
+    "question": "monitor calibration",
+    "reponse": "Calibre ton écran pour des couleurs précises avec un logiciel ou un outil hardware, surtout pour la création graphique ou le montage vidéo."
+  },
+  {
+    "question": "high refresh gaming",
+    "reponse": "Pour profiter pleinement d’un écran 144Hz ou 240Hz, ajuste les paramètres graphiques pour maintenir un FPS élevé et stable."
+  },
+  {
+    "question": "cpu cooling liquid",
+    "reponse": "Le watercooling AIO offre un refroidissement efficace et silencieux. Vérifie la compatibilité avec le socket et la taille du boîtier."
+  },
+  {
+    "question": "cpu cooling air",
+    "reponse": "Un ventirad performant est souvent suffisant pour la plupart des CPU. Privilégie un modèle avec de bons ventilateurs et une grande surface de dissipation."
+  },
+  {
+    "question": "Salut",
+    "reponse": "Salut ! Comment puis-je t'aider aujourd'hui ?"
+  },
+  {
+    "question": "Sava",
+    "reponse": "Oui, je vais bien et toi ?"
+  }
+]
+
+
