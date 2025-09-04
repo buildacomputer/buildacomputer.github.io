@@ -1254,7 +1254,7 @@ html body.minimal header nav.component-nav {
   padding: 2px 6px;
   border-radius: 6px;
   margin-left: 4px;
-  text-shadow: 0px 0px 4px rgba(255, 75, 92, 0.4);
+  text-shadow: 0px 0px 10px #2564eb8a;
 }
 
 .beta-tag-bis {
@@ -1265,7 +1265,7 @@ html body.minimal header nav.component-nav {
   padding: 2px 6px;
   border-radius: 6px;
   margin-left: 4px;
-  text-shadow: 0px 0px 4px rgba(255, 75, 92, 0.4);
+  text-shadow: 0px 0px 10px #2564eb8a;
 }
 
 @media (max-width: 719px) {
